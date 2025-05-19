@@ -42,13 +42,59 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-           
+            Rectangle()
+                .foregroundColor(.black)
+            
+            
             VStack {
                 Rectangle()
+                    .padding(.bottom, -10.0)
                     .foregroundColor(.white)
-                    .frame(width: 50, height: 50)
-                Image("chicagoStar")
-                    .foregroundColor(.gray)
+                    .frame(width: 1000,height: 50)
+                Rectangle()
+                    .padding(.bottom, -10.0)
+                    .foregroundColor(.blue)
+                    .frame(width:1000, height:50)
+                
+                ZStack {
+                    Rectangle()
+                        .padding(.bottom,-10.0)
+                        .foregroundColor(.white)
+                        .frame(width:1000, height:95)
+                    HStack {
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 50, height: 50)
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 50, height: 50)
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 50, height: 50)
+                        Image("chicagoStar")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 50, height: 50)
+                        
+                        
+                        
+                    }
+         
+                }
+                
+                Rectangle()
+                    .padding(.bottom,-10.0)
+                    .foregroundColor(.blue)
+                    .frame(width:1000, height:50)
+                
+                Rectangle()
+                    .foregroundColor(.white)
+                    .frame(width:1000, height:50)
+                
+                
             }
         }
     }
